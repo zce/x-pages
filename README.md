@@ -86,10 +86,10 @@ $ x-pages serve
 $ x-pages build
 
 # production build (minify css, minify js, autoprefixer css, non sourcemaps)
-$ x-pages build --prodution
+$ x-pages build --production
 
 # deploy to gh pages (make sure proj root is github repo, and it has gh-pages branch)
-$ x-pages deploy --prodution
+$ x-pages deploy --production
 ```
 
 ## License

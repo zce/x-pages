@@ -85,11 +85,11 @@ $ x-pages serve
 # 开发模式构建
 $ x-pages build
 
-# 生成模式构建（autoprefixer、会压缩处理、无 sourcemaps、无图片压缩）
-$ x-pages build --prodution
+# 生产模式构建（autoprefixer、会压缩处理、无 sourcemaps、无图片压缩）
+$ x-pages build --production
 
 # 自动部署到 GitHub Pages（必须当前项目目录已经托管到 github，并且已经有了 gh-pages 分支）
-$ x-pages deploy --prodution
+$ x-pages deploy --production
 ```
 
 ## 授权许可
