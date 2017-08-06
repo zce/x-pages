@@ -1,0 +1,20 @@
+---
+layout: basic
+title: Home
+---
+
+<h1>{{@site.title}}  {{date 'YYYY'}}</h1>
+
+{{#block 'styles'}}
+<style>
+  h1 {
+    color: #ff0;
+  }
+</style>
+{{/block}}
+
+{{#block 'scripts'}}
+<script>
+  console.log('page')
+</script>
+{{/block}}
