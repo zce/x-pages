@@ -78,7 +78,11 @@ $ x-pages deploy --production
     └── index.html ······································ page file (use layout & partials)
 ```
 
-### Default config
+## Example repo
+
+[zce/x-pages-example](https://github.com/zce/x-pages-example)
+
+## Default config
 
 ```js
 module.exports = {
@@ -101,9 +105,13 @@ And all of the properties in the `config.js` can be used as template variables i
 
 In other words, you can add any template variables you need into the configuration file.
 
-## Example repo
+## Contributing
 
-[zce/x-pages-example](https://github.com/zce/x-pages-example)
+1. Fork it!
+2. Create your feature branch: git checkout -b my-new-feature
+3. Commit your changes: git commit -am 'Add some feature'
+4. Push to the branch: git push origin my-new-feature
+5. Submit a pull request :D
 
 ## License
 

@@ -34,10 +34,6 @@ $ npm i -g x-pages
 $ yarn global add x-pages
 ```
 
-## 示例仓库（供参考）
-
-[zce/x-pages-example](https://github.com/zce/x-pages-example)
-
 ## 命令行使用
 
 在项目更目录下
@@ -84,7 +80,11 @@ $ x-pages deploy --production
     └── index.html ······································ 页面文件（可以使用布局和部分页）
 ```
 
-### 默认配置
+## 示例仓库（供参考）
+
+[zce/x-pages-example](https://github.com/zce/x-pages-example)
+
+## 默认配置
 
 ```js
 module.exports = {
@@ -106,6 +106,14 @@ module.exports = {
 配置中的所有属性都可以在模板中作为模板变量使用。例如：`{{@site.title}}` => `config.title`
 
 也就是说，您可以在配置文件中添加任何模板变量。
+
+## 为其贡献
+
+1. Fork 该仓库
+2. 创建你的新分支: git checkout -b my-new-feature
+3. 在新分支上提交你的更改: git commit -am 'Add some feature'
+4. 推送到你 Fork 的仓库: git push origin my-new-feature
+5. 发起一个 Pull Request :D
 
 ## 授权许可
 
