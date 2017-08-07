@@ -1,6 +1,6 @@
 {
   "name": "x-pages",
-  "version": "0.1.0-alpha.11",
+  "version": "0.1.0-alpha.12",
   "description": "A simple static x-pages develop workflow",
   "homepage": "https://github.com/zce/x-pages#readme",
   "bugs": {
@@ -17,7 +17,7 @@
     "url": "git+https://github.com/zce/x-pages.git"
   },
   "scripts": {
-    "lint": "standard \"*.js\" \"bin/*.js\" \"lib/*.js\"",
+    "lint": "standard \"*.js\" \"bin/**/*.js\" \"lib/**/*.js\"",
     "test": "cd example && node ../bin/cli build"
   },
   "dependencies": {
