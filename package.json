@@ -47,7 +47,7 @@
     "run-sequence": "^2.1.0"
   },
   "devDependencies": {
-    "standard": "^10.0.2"
+    "standard": "^10.0.3"
   },
   "engines": {
     "node": "^6.9.0 || ^7.0.0 || ^8.0.0"
