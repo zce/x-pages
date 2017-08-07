@@ -1,6 +1,6 @@
 {
   "name": "x-pages",
-  "version": "0.1.0-alpha.12",
+  "version": "0.1.0-alpha.13",
   "description": "A simple static x-pages develop workflow",
   "homepage": "https://github.com/zce/x-pages#readme",
   "bugs": {
@@ -18,7 +18,7 @@
   },
   "scripts": {
     "lint": "standard \"*.js\" \"bin/**/*.js\" \"lib/**/*.js\"",
-    "test": "cd example && node ../bin/cli build"
+    "test": "cd example && node ../bin/cli build && node ../bin/cli build --production"
   },
   "dependencies": {
     "babel-preset-es2015": "^6.24.1",
