@@ -53,12 +53,15 @@ module.exports = {
   assets: 'assets',
   layouts: 'layouts',
   partials: 'partials',
-  temp: '.tmp',
   output: 'dist',
   port: 2080,
   debug: process.env.NODE_ENV !== 'production'
 }
 ```
+
+配置中的所有属性都可以在模板中作为模板变量使用。例如：`{{@site.title}}` => `config.title`
+
+也就是说，您可以在配置文件中添加任何模板变量。
 
 ## 安装
 

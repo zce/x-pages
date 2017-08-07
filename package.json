@@ -1,6 +1,6 @@
 {
   "name": "x-pages",
-  "version": "0.1.0-alpha.13",
+  "version": "0.1.0-alpha.14",
   "description": "A simple static x-pages develop workflow",
   "homepage": "https://github.com/zce/x-pages#readme",
   "bugs": {
@@ -44,7 +44,8 @@
     "gulp-uglify": "^3.0.0",
     "handlebars": "^4.0.10",
     "moment": "^2.18.1",
-    "run-sequence": "^2.1.0"
+    "run-sequence": "^2.1.0",
+    "tmp": "^0.0.31"
   },
   "devDependencies": {
     "standard": "^10.0.3"

@@ -1,4 +1,22 @@
+/**
+ * Site variables
+ * @type {Object}
+ * @example
+ *   {{@site.<property>}}
+ */
 module.exports = {
+  /**
+   * Site title
+   * @type {String}
+   * @example
+   *   {{@site.title}}
+   */
   title: 'Example Site',
-  url: 'http://localhost:2080/'
+  /**
+   * Site url
+   * @type {String}
+   * @example
+   *   {{@site.url}}
+   */
+  url: 'http://example.me/'
 }

@@ -53,12 +53,15 @@ module.exports = {
   assets: 'assets',
   layouts: 'layouts',
   partials: 'partials',
-  temp: '.tmp',
   output: 'dist',
   port: 2080,
   debug: process.env.NODE_ENV !== 'production'
 }
 ```
+
+And all of the properties in the `config.js` can be used as template variables in the template. e.g. `{{@site.title}}` => `config.title`.
+
+In other words, you can add any template variables you need into the configuration file.
 
 ## Installation
 
