@@ -24,10 +24,42 @@
 
 [中文说明](README.zh-cn.md)
 
+## Installation
+
+```sh
+# npm
+$ npm i -g x-pages
+
+# or yarn
+$ yarn global add x-pages
+```
+
+## CLI Usage
+
+```sh
+# make project directory & cd into
+$ mkdir my-project && cd $_
+
+# init project structure
+$ x-pages init
+
+# dev hot reload serve
+$ x-pages serve
+
+# development build
+$ x-pages build
+
+# production build (minify css, minify js, autoprefixer css, non sourcemaps)
+$ x-pages build --production
+
+# deploy to gh pages (make sure proj root is github repo, and it has gh-pages branch)
+$ x-pages deploy --production
+```
+
 ## Project structure
 
 ```
-└── example ············································· proj root
+└── my-project ·········································· proj root
     ├── assets ·········································· static assets
     │   ├── css ········································· styles (auto compile scss)
     │   │   ├── _variables.scss ························· partials scss (dont output)
@@ -46,15 +78,21 @@
     └── index.html ······································ page file (use layout & partials)
 ```
 
-### default config
+### Default config
 
 ```js
 module.exports = {
+  // assets dir name
   assets: 'assets',
+  // layouts dir name
   layouts: 'layouts',
+  // partials dir name
   partials: 'partials',
+  // output dir name
   output: 'dist',
+  // http server port
   port: 2080,
+  // debug mode
   debug: process.env.NODE_ENV !== 'production'
 }
 ```
@@ -63,37 +101,9 @@ And all of the properties in the `config.js` can be used as template variables i
 
 In other words, you can add any template variables you need into the configuration file.
 
-## Installation
-
-```sh
-# npm
-$ npm i -g x-pages
-
-# or yarn
-$ yarn global add x-pages
-```
-
 ## Example repo
 
 [zce/x-pages-example](https://github.com/zce/x-pages-example)
-
-## CLI Usage
-
-in proj root dir
-
-```sh
-# dev hot reload serve
-$ x-pages serve
-
-# development build
-$ x-pages build
-
-# production build (minify css, minify js, autoprefixer css, non sourcemaps)
-$ x-pages build --production
-
-# deploy to gh pages (make sure proj root is github repo, and it has gh-pages branch)
-$ x-pages deploy --production
-```
 
 ## License
 

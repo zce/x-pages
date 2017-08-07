@@ -24,10 +24,48 @@
 
 [Readme for English](README.md)
 
+## 安装
+
+```sh
+# 通过 npm 安装
+$ npm i -g x-pages
+
+# 或者通过 yarn 安装
+$ yarn global add x-pages
+```
+
+## 示例仓库（供参考）
+
+[zce/x-pages-example](https://github.com/zce/x-pages-example)
+
+## 命令行使用
+
+在项目更目录下
+
+```sh
+# 创建一个空的项目目录并切换工作目录到这个目录
+$ mkdir my-project && cd $_
+
+# 自动初始化一个基本的项目结构
+$ x-pages init
+
+# 启动 Browser Sync HTTP 服务
+$ x-pages serve
+
+# 开发模式构建
+$ x-pages build
+
+# 生产模式构建（autoprefixer、会压缩处理、无 sourcemaps、无图片压缩）
+$ x-pages build --production
+
+# 自动部署到 GitHub Pages（必须当前项目目录已经托管到 github，并且已经有了 gh-pages 分支）
+$ x-pages deploy --production
+```
+
 ## 约定项目结构
 
 ```
-└── example ············································· 项目根目录
+└── my-project ·········································· 项目根目录
     ├── assets ·········································· 静态资源目录
     │   ├── css ········································· 样式目录（会自动编译 SCSS 文件）
     │   │   ├── _variables.scss ························· 被 import 的 SCSS 文件（不会输出）
@@ -50,11 +88,17 @@
 
 ```js
 module.exports = {
+  // 资源目录（此目录下的 js / scss / img 会被自动处理）
   assets: 'assets',
+  // 布局文件目录
   layouts: 'layouts',
+  // 部分页文件目录
   partials: 'partials',
+  // 输出目录
   output: 'dist',
+  // HTTP 服务端口
   port: 2080,
+  // 调试模式
   debug: process.env.NODE_ENV !== 'production'
 }
 ```
@@ -62,38 +106,6 @@ module.exports = {
 配置中的所有属性都可以在模板中作为模板变量使用。例如：`{{@site.title}}` => `config.title`
 
 也就是说，您可以在配置文件中添加任何模板变量。
-
-## 安装
-
-```sh
-# 通过 npm 安装
-$ npm i -g x-pages
-
-# 或者通过 yarn 安装
-$ yarn global add x-pages
-```
-
-## 示例仓库（供参考）
-
-[zce/x-pages-example](https://github.com/zce/x-pages-example)
-
-## 命令行使用
-
-在项目更目录下
-
-```sh
-# 启动 Browser Sync HTTP 服务
-$ x-pages serve
-
-# 开发模式构建
-$ x-pages build
-
-# 生产模式构建（autoprefixer、会压缩处理、无 sourcemaps、无图片压缩）
-$ x-pages build --production
-
-# 自动部署到 GitHub Pages（必须当前项目目录已经托管到 github，并且已经有了 gh-pages 分支）
-$ x-pages deploy --production
-```
 
 ## 授权许可
 
