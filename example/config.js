@@ -11,7 +11,7 @@ module.exports = {
    * @example
    *   {{@site.title}}
    */
-  title: 'Example Site',
+  title: 'awesome x-pages',
   /**
    * Site url
    * @type {String}

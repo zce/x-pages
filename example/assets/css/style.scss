@@ -1,5 +1,10 @@
 @import 'variables';
 
 body {
+  color: $body-color;
   background-color: $body-bg;
+}
+
+img {
+  border-radius: 20px;
 }

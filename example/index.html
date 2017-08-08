@@ -1,20 +1,23 @@
 ---
 layout: basic
 title: Home
+slogan: MAKE IT BETTER
 ---
 
-<h1>{{@site.title}}  {{date 'YYYY'}}</h1>
+<h3>{{ @site.title }}</h3>
 
-{{#block 'styles'}}
+<p>{{ @page.slogan }}</p>
+
+<img src="{{ asset 'img/rock.png' }}">
+
+{{# block 'styles' }}
 <style>
-  h1 {
-    color: #ff0;
-  }
+  h3 { color: #789; }
 </style>
-{{/block}}
+{{/ block }}
 
-{{#block 'scripts'}}
+{{# block 'scripts' }}
 <script>
   console.log('page')
 </script>
-{{/block}}
+{{/ block }}
