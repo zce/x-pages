@@ -8,12 +8,13 @@ const { env, argv, cwd } = process
 
 // version
 if (['-v', '--version'].includes(argv[2])) {
-  return console.log(colors.red('v' + version))
+  console.log(colors.red('v' + version))
+  process.exit()
 }
 
 // task scope
 if (!['init', 'serve', 'build', 'deploy', 'serve:dist'].includes(argv[2])) {
-  return console.log(`
+  console.log(`
 command '${argv[2]}' not found
 
 Usage:
@@ -29,6 +30,7 @@ commands:
 options:
   --production
 `)
+  process.exit()
 }
 
 // mode
