@@ -99,7 +99,9 @@ module.exports = {
   // HTTP 服务端口
   port: 2080,
   // 调试模式
-  debug: process.env.NODE_ENV !== 'production'
+  debug: process.env.NODE_ENV !== 'production',
+  // 忽略清单
+  exclude: []
 }
 ```
 

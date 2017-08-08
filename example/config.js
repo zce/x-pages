@@ -18,5 +18,12 @@ module.exports = {
    * @example
    *   {{@site.url}}
    */
-  url: 'http://example.me/'
+  url: 'http://example.me/',
+  /**
+   * Exclude list
+   * @type {Array}
+   */
+  exclude: [
+    'README.md'
+  ]
 }

@@ -97,7 +97,9 @@ module.exports = {
   // http server port
   port: 2080,
   // debug mode
-  debug: process.env.NODE_ENV !== 'production'
+  debug: process.env.NODE_ENV !== 'production',
+  // ignore list
+  exclude: []
 }
 ```
 
@@ -112,6 +114,10 @@ In other words, you can add any template variables you need into the configurati
 3. Commit your changes: git commit -am 'Add some feature'
 4. Push to the branch: git push origin my-new-feature
 5. Submit a pull request :D
+
+## TODO
+
+- [x] exclude
 
 ## License
 
