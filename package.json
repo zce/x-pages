@@ -45,6 +45,7 @@
     "gulp-sourcemaps": "^2.6.0",
     "gulp-uglify": "^3.0.0",
     "gulp-util": "^3.0.8",
+    "gulp-watch": "^4.3.11",
     "handlebars": "^4.0.10",
     "moment": "^2.18.1",
     "run-sequence": "^2.1.0",
