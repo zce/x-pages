@@ -1,6 +1,6 @@
 {
   "name": "x-pages",
-  "version": "0.1.0-alpha.18",
+  "version": "0.1.0-alpha.19",
   "description": "A simple static x-pages develop workflow",
   "homepage": "https://github.com/zce/x-pages#readme",
   "bugs": {
@@ -56,7 +56,7 @@
     "standard": "^10.0.3"
   },
   "engines": {
-    "node": "^6.9.0 || ^7.0.0 || ^8.0.0"
+    "node": ">=6.9.0"
   },
   "preferGlobal": true
 }
