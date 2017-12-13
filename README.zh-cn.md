@@ -7,19 +7,6 @@
 [![devDependency Status][devdependency-image]][devdependency-url]
 [![Code Style][style-image]][style-url]
 
-[npm-image]: https://badge.fury.io/js/x-pages.svg
-[npm-url]: https://npmjs.org/package/x-pages
-[download-image]: https://img.shields.io/npm/dm/x-pages.svg
-[download-url]: https://npmjs.org/package/x-pages
-[travis-image]: https://travis-ci.org/zce/x-pages.svg?branch=master
-[travis-url]: https://travis-ci.org/zce/x-pages
-[dependency-image]: https://david-dm.org/zce/x-pages/status.svg
-[dependency-url]: https://david-dm.org/zce/x-pages
-[devdependency-image]: https://david-dm.org/zce/x-pages/dev-status.svg
-[devdependency-url]: https://david-dm.org/zce/x-pages?type=dev
-[style-image]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg
-[style-url]: http://standardjs.com/
-
 > 一个非常简单的静态页面开发工作流（约定大于配置）
 
 [Readme for English](README.md)
@@ -117,6 +104,23 @@ module.exports = {
 4. 推送到你 Fork 的仓库: git push origin my-new-feature
 5. 发起一个 Pull Request :D
 
+> **备注**: 请确保在发起 Pull Request 之前拉去最新的上游代码！
+
 ## 授权许可
 
 [MIT](LICENSE) &copy; [汪磊](https://zce.me)
+
+
+
+[npm-image]: https://badge.fury.io/js/x-pages.svg
+[npm-url]: https://npmjs.org/package/x-pages
+[download-image]: https://img.shields.io/npm/dm/x-pages.svg
+[download-url]: https://npmjs.org/package/x-pages
+[travis-image]: https://travis-ci.org/zce/x-pages.svg?branch=master
+[travis-url]: https://travis-ci.org/zce/x-pages
+[dependency-image]: https://david-dm.org/zce/x-pages/status.svg
+[dependency-url]: https://david-dm.org/zce/x-pages
+[devdependency-image]: https://david-dm.org/zce/x-pages/dev-status.svg
+[devdependency-url]: https://david-dm.org/zce/x-pages?type=dev
+[style-image]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg
+[style-url]: http://standardjs.com/

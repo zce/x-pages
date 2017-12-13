@@ -7,19 +7,6 @@
 [![devDependency Status][devdependency-image]][devdependency-url]
 [![Code Style][style-image]][style-url]
 
-[npm-image]: https://badge.fury.io/js/x-pages.svg
-[npm-url]: https://npmjs.org/package/x-pages
-[download-image]: https://img.shields.io/npm/dm/x-pages.svg
-[download-url]: https://npmjs.org/package/x-pages
-[travis-image]: https://travis-ci.org/zce/x-pages.svg?branch=master
-[travis-url]: https://travis-ci.org/zce/x-pages
-[dependency-image]: https://david-dm.org/zce/x-pages/status.svg
-[dependency-url]: https://david-dm.org/zce/x-pages
-[devdependency-image]: https://david-dm.org/zce/x-pages/dev-status.svg
-[devdependency-url]: https://david-dm.org/zce/x-pages?type=dev
-[style-image]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg
-[style-url]: http://standardjs.com/
-
 > A simple static pages develop workflow (Convention over Configuration)
 
 [中文说明](README.zh-cn.md)
@@ -107,18 +94,36 @@ And all of the properties in the `config.js` can be used as template variables i
 
 In other words, you can add any template variables you need into the configuration file.
 
-## Contributing
-
-1. Fork it!
-2. Create your feature branch: git checkout -b my-new-feature
-3. Commit your changes: git commit -am 'Add some feature'
-4. Push to the branch: git push origin my-new-feature
-5. Submit a pull request :D
-
 ## TODO
 
 - [x] exclude
 
+## Contributing
+
+1. **Fork** it on GitHub!
+2. **Clone** the fork to your own machine.
+3. **Checkout** your feature branch: `git checkout -b my-awesome-feature`
+4. **Commit** your changes to your own branch: `git commit -am 'Add some feature'`
+5. **Push** your work back up to your fork: `git push -u origin my-awesome-feature`
+6. Submit a **Pull Request** so that we can review your changes.
+
+> **NOTE**: Be sure to merge the latest from "upstream" before making a pull request!
+
 ## License
 
 [MIT](LICENSE) &copy; [汪磊](https://zce.me)
+
+
+
+[npm-image]: https://badge.fury.io/js/x-pages.svg
+[npm-url]: https://npmjs.org/package/x-pages
+[download-image]: https://img.shields.io/npm/dm/x-pages.svg
+[download-url]: https://npmjs.org/package/x-pages
+[travis-image]: https://travis-ci.org/zce/x-pages.svg?branch=master
+[travis-url]: https://travis-ci.org/zce/x-pages
+[dependency-image]: https://david-dm.org/zce/x-pages/status.svg
+[dependency-url]: https://david-dm.org/zce/x-pages
+[devdependency-image]: https://david-dm.org/zce/x-pages/dev-status.svg
+[devdependency-url]: https://david-dm.org/zce/x-pages?type=dev
+[style-image]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg
+[style-url]: http://standardjs.com/
