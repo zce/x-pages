@@ -48,8 +48,10 @@
     "gulp-watch": "^4.3.11",
     "handlebars": "^4.0.11",
     "moment": "^2.19.4",
+    "react-static": "^4.5.0",
     "run-sequence": "^2.2.0",
-    "tmp": "^0.0.33"
+    "tmp": "^0.0.33",
+    "x-pages": "^0.1.0-alpha.19"
   },
   "devDependencies": {
     "rimraf": "^2.6.2",
