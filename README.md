@@ -53,7 +53,7 @@ $ x-pages deploy --production
     │   │   └── style.scss ······························ entry scss
     │   ├── img ········································· images (auto minify)
     │   │   └── rock.png ································ image file
-    │   └── js ·········································· scripts (auto compile es2015)
+    │   └── js ·········································· scripts (auto uglify)
     │       └── global.js ······························· script file
     ├── layouts ········································· layouts (dont output)
     │   └── basic.html ·································· layout file
@@ -90,7 +90,7 @@ module.exports = {
 }
 ```
 
-And all of the properties in the `config.js` can be used as template variables in the template. e.g. `{{@site.title}}` => `config.title`.
+And all of the properties in the `config.js` or `config.json` can be used as template variables in the template. e.g. `{{@site.title}}` => `config.title`.
 
 In other words, you can add any template variables you need into the configuration file.
 

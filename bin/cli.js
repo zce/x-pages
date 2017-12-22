@@ -6,44 +6,73 @@ const { name, version } = require('../package')
 
 const { env, argv, cwd } = process
 
-// version
+/**
+ * version command
+ */
+
 if (['-v', '--version'].includes(argv[2])) {
   console.log(colors.red('v' + version))
   process.exit()
 }
 
-// task scope
-if (!['init', 'serve', 'build', 'deploy', 'serve:dist'].includes(argv[2])) {
-  console.log(`
-command '${argv[2]}' not found
+/**
+ * help command
+ */
 
-Usage:
+const help = `
+${colors.cyan('Usage:')}
   ${name} <command> [options]
 
-commands:
+${colors.cyan('Commands:')}
   init
   serve
   build
-  deploy
   serve:dist
+  deploy
+  clean
 
-options:
-  --production
-`)
+${colors.cyan('Options:')}
+  --production, --prod
+`
+
+if (['-h', '--help'].includes(argv[2])) {
+  console.log(help)
   process.exit()
 }
 
-// mode
-if (env.NODE_ENV === undefined) {
-  env.NODE_ENV = argv.includes('--production') ? 'production' : 'development'
+/**
+ * command scope
+ */
+const allowCommands = ['init', 'serve', 'build', 'serve:dist', 'deploy', 'clean']
+
+if (!allowCommands.includes(argv[2])) {
+  console.log(`
+Command '${argv[2]}' not found`)
+  console.log(help)
+  process.exit()
 }
 
-// bootstrap gulp
+/**
+ * env mode
+ */
+
+if (env.NODE_ENV === undefined) {
+  env.NODE_ENV = argv.includes('--production') || argv.includes('--prod') ? 'production' : 'development'
+}
+
 log('Running', colors.red(argv[2]), 'in', colors.blue(env.NODE_ENV), 'mode')
+
+/**
+ * gulp arguments
+ */
 
 argv.push('--cwd')
 argv.push(cwd())
 argv.push('--gulpfile')
-argv.push(join(__dirname, '../lib/tasks.js'))
+argv.push(join(__dirname, '../lib'))
+
+/**
+ * bootstrap gulp
+ */
 
 require('gulp/bin/gulp')

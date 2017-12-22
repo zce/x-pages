@@ -12,7 +12,7 @@
     │   │   └── style.scss ······························ entry scss
     │   ├── img ········································· images (auto minify)
     │   │   └── rock.png ································ image file
-    │   └── js ·········································· scripts (auto compile es2015)
+    │   └── js ·········································· scripts (auto uglify)
     │       └── global.js ······························· script file
     ├── layouts ········································· layouts (dont output)
     │   └── basic.html ·································· layout file
