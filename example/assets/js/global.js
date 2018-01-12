@@ -1,4 +1,4 @@
-(window => {
+(function (window) {
   // TODO: global logics
-  window.console.log(`Hey bitch! @ ${Date.now()}`)
+  console.log('Hey bitch! @ ' + new Date())
 })(window)
