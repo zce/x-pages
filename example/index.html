@@ -4,15 +4,15 @@ title: Home
 slogan: MAKE IT BETTER
 ---
 
-<img src="{{asset 'img/rock.png'}}">
-
-<p>{{@page.slogan}}</p>
-
 {{#block 'styles'}}
 <style>
   h3 { color: #789; }
 </style>
 {{/block}}
+
+<img src="{{asset 'img/rock.png'}}">
+
+<p>{{slogan}}</p>
 
 {{#block 'scripts'}}
 <script>
