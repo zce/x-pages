@@ -1,16 +1,31 @@
 {
   "name": "x-pages",
-  "version": "0.1.0-beta.6",
-  "description": "A simple static x-pages develop workflow",
+  "version": "0.2.0-alpha.0",
+  "description": "A static site development workflow",
+  "keywords": [
+    "x-pages",
+    "cli",
+    "zce"
+  ],
   "homepage": "https://github.com/zce/x-pages#readme",
   "bugs": {
     "url": "https://github.com/zce/x-pages/issues"
   },
   "license": "MIT",
-  "author": "zce <w@zce.me> (https://zce.me)",
-  "main": "lib",
+  "author": "zce <w@zce.me> (https://zce.me/)",
+  "files": [
+    "bin",
+    "lib"
+  ],
+  "main": "lib/index.js",
   "bin": {
-    "x-pages": "bin/cli.js"
+    "x-pages": "bin/x-pages.js"
+  },
+  "directories": {
+    "lib": "lib",
+    "doc": "doc",
+    "example": "example",
+    "test": "test"
   },
   "repository": {
     "type": "git",
@@ -18,43 +33,44 @@
   },
   "scripts": {
     "lint": "standard --fix",
-    "pretest": "mkdir test",
-    "test": "cd test && node ../bin/cli init && node ../bin/cli build && node ../bin/cli build --production",
-    "posttest": "rimraf test"
+    "test": "nyc ava"
   },
   "dependencies": {
-    "browser-sync": "^2.23.6",
+    "autoprefixer": "^8.5.1",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "browser-sync": "^2.24.4",
     "bs-html-injector": "^3.0.3",
+    "chalk": "^2.4.1",
+    "cssnano": "^3.10.0",
     "del": "^3.0.0",
-    "front-matter": "^2.3.0",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^5.0.0",
-    "gulp-cssnano": "^2.1.2",
+    "gulp": "^4.0.0",
+    "gulp-babel": "^7.0.1",
     "gulp-gh-pages": "^0.5.4",
     "gulp-htmlmin": "^4.0.0",
     "gulp-if": "^2.0.2",
     "gulp-ignore": "^2.0.2",
     "gulp-imagemin": "^4.1.0",
+    "gulp-less": "^3.5.0",
     "gulp-load-plugins": "^1.5.0",
+    "gulp-nunjucks": "^4.0.0",
     "gulp-plumber": "^1.2.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.2.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-rename": "^1.2.3",
+    "gulp-sass": "^4.0.1",
     "gulp-sourcemaps": "^2.6.4",
     "gulp-uglify": "^3.0.0",
-    "gulp-util": "^3.0.8",
-    "gulp-watch": "^5.0.0",
-    "handlebars": "^4.0.11",
     "merge-stream": "^1.0.1",
-    "moment": "^2.21.0",
-    "run-sequence": "^2.2.1",
-    "tmp": "^0.0.33"
+    "ora": "^2.1.0",
+    "postcss-preset-env": "^5.1.0"
   },
   "devDependencies": {
-    "rimraf": "^2.6.2",
-    "standard": "^11.0.0"
+    "ava": "^1.0.0-beta.4",
+    "nyc": "^11.8.0",
+    "standard": "^11.0.1"
   },
   "engines": {
-    "node": ">=6.9.0"
+    "node": ">=6"
   },
   "preferGlobal": true
 }

@@ -2,30 +2,31 @@
  * Site variables
  * @type {Object}
  * @example
- *   {{@site.<property>}}
+ *   {{ site.<property> }}
  */
 module.exports = {
   /**
    * Site title
    * @type {String}
    * @example
-   *   {{@site.title}}
+   *   {{ site.title }}
    */
-  title: 'x-pages',
+  title: 'x-pages-example',
 
   /**
    * Site url
    * @type {String}
    * @example
-   *   {{@site.url}}
+   *   {{ site.url }}
    */
-  url: 'http://example.me/',
+  url: 'http://example.com',
 
   /**
    * Exclude list
    * @type {Array}
    */
   exclude: [
+    '.gitignore',
     'README.md'
   ]
 }

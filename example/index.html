@@ -1,21 +1,19 @@
----
-layout: basic
-title: Home
-slogan: MAKE IT BETTER
----
+{% extends "layouts/basic.html" %}
 
-{{#block 'styles'}}
+{% block styles %}
 <style>
-  h3 { color: #789; }
+  body {
+    background-color: #000;
+  }
 </style>
-{{/block}}
+{% endblock %}
 
-<img src="{{asset 'img/rock.png'}}">
+{% block body %}
+<img src="assets/img/rock.png">
+{% endblock %}
 
-<p>{{slogan}}</p>
-
-{{#block 'scripts'}}
+{% block scripts %}
 <script>
-  console.log('page')
+  console.log('page scripts');
 </script>
-{{/block}}
+{% endblock %}

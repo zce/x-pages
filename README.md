@@ -1,102 +1,76 @@
 # x-pages
 
-[![NPM version][npm-image]][npm-url]
-[![NPM download][download-image]][download-url]
 [![Build Status][travis-image]][travis-url]
+[![Coverage Status][codecov-image]][codecov-url]
+[![NPM Downloads][downloads-image]][downloads-url]
+[![NPM Version][version-image]][version-url]
+[![License][license-image]][license-url]
 [![Dependency Status][dependency-image]][dependency-url]
 [![devDependency Status][devdependency-image]][devdependency-url]
 [![Code Style][style-image]][style-url]
 
-> A simple static pages develop workflow (Convention over Configuration)
-
-[中文说明](README.zh-cn.md)
+> A static site development workflow
 
 ## Installation
 
-```sh
-# npm
-$ npm i -g x-pages
+```shell
+$ yarn add x-pages
 
-# or yarn
-$ yarn global add x-pages
+# or npm
+$ npm install x-pages
 ```
+
+## Usage
+
+<!-- TODO: Introduction of API use -->
+
+```javascript
+const xPages = require('x-pages')
+const result = xPages('zce')
+// result => 'zce@zce.me'
+```
+
+## API
+
+<!-- TODO: Introduction of API -->
+
+### xPages(name[, options])
+
+#### name
+
+- Type: `string`
+- Details: name string
+
+#### options
+
+##### host
+
+- Type: `string`
+- Details: host string
+- Default: `'zce.me'`
 
 ## CLI Usage
 
-```sh
-# make project directory & cd into
-$ mkdir my-project && cd $_
+<!-- TODO: Introduction of CLI -->
 
-# init project structure
-$ x-pages init
+```shell
+$ yarn global add x-pages
 
-# dev hot reload serve
-$ x-pages serve
-
-# development build
-$ x-pages build
-
-# production build (minify css, minify js, autoprefixer css, non sourcemaps)
-$ x-pages build --production
-
-# deploy to gh pages (make sure proj root is github repo, and it has gh-pages branch)
-$ x-pages deploy --production
+# or npm
+$ npm install x-pages -g
 ```
 
-## Project structure
+```shell
+$ x-pages --help
 
+  Usage: x-pages <input>
+
+  Options:
+
+    -V, --version  output the version number
+    -H, --host     Email host
+    -h, --help     output usage information
 ```
-└── my-project ·········································· proj root
-    ├── assets ·········································· static assets
-    │   ├── css ········································· styles (auto compile scss)
-    │   │   ├── _variables.scss ························· partials scss (dont output)
-    │   │   └── style.scss ······························ entry scss
-    │   ├── img ········································· images (auto minify)
-    │   │   └── rock.png ································ image file
-    │   └── js ·········································· scripts (auto uglify)
-    │       └── global.js ······························· script file
-    ├── layouts ········································· layouts (dont output)
-    │   └── basic.html ·································· layout file
-    ├── partials ········································ partials (dont output)
-    │   ├── footer.html ································· partial file
-    │   └── header.html ································· partial file
-    ├── config.js ······································· config file
-    ├── favicon.ico ····································· site favicon
-    └── index.html ······································ page file (use layout & partials)
-```
-
-## Example repo
-
-[zce/x-pages-example](https://github.com/zce/x-pages-example)
-
-## Default config
-
-```js
-module.exports = {
-  // assets dir name
-  assets: 'assets',
-  // layouts dir name
-  layouts: 'layouts',
-  // partials dir name
-  partials: 'partials',
-  // output dir name
-  output: 'dist',
-  // http server port
-  port: 2080,
-  // debug mode
-  debug: process.env.NODE_ENV !== 'production',
-  // ignore list
-  exclude: []
-}
-```
-
-And all of the properties in the `config.js` or `config.json` can be used as template variables in the template. e.g. `{{@site.title}}` => `config.title`.
-
-In other words, you can add any template variables you need into the configuration file.
-
-## TODO
-
-- [x] exclude
 
 ## Contributing
 
@@ -111,19 +85,23 @@ In other words, you can add any template variables you need into the configurati
 
 ## License
 
-[MIT](LICENSE) &copy; [汪磊](https://zce.me)
+[MIT](LICENSE) &copy; zce <w@zce.me> (https://zce.me/)
 
 
 
-[npm-image]: https://badge.fury.io/js/x-pages.svg
-[npm-url]: https://npmjs.org/package/x-pages
-[download-image]: https://img.shields.io/npm/dm/x-pages.svg
-[download-url]: https://npmjs.org/package/x-pages
-[travis-image]: https://travis-ci.org/zce/x-pages.svg?branch=master
+[travis-image]: https://img.shields.io/travis/zce/x-pages.svg
 [travis-url]: https://travis-ci.org/zce/x-pages
-[dependency-image]: https://david-dm.org/zce/x-pages/status.svg
+[codecov-image]: https://img.shields.io/codecov/c/github/zce/x-pages.svg
+[codecov-url]: https://codecov.io/gh/zce/x-pages
+[downloads-image]: https://img.shields.io/npm/dm/x-pages.svg
+[downloads-url]: https://npmjs.org/package/x-pages
+[version-image]: https://img.shields.io/npm/v/x-pages.svg
+[version-url]: https://npmjs.org/package/x-pages
+[license-image]: https://img.shields.io/npm/l/x-pages.svg
+[license-url]: https://github.com/zce/x-pages/blob/master/LICENSE
+[dependency-image]: https://img.shields.io/david/zce/x-pages.svg
 [dependency-url]: https://david-dm.org/zce/x-pages
-[devdependency-image]: https://david-dm.org/zce/x-pages/dev-status.svg
+[devdependency-image]: https://img.shields.io/david/dev/zce/x-pages.svg
 [devdependency-url]: https://david-dm.org/zce/x-pages?type=dev
-[style-image]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg
-[style-url]: http://standardjs.com/
+[style-image]: https://img.shields.io/badge/code_style-standard-brightgreen.svg
+[style-url]: http://standardjs.com

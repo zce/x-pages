@@ -1,24 +1,31 @@
 sudo: false
 
+# os:
+#   - linux
+#   - osx
+#   - windows
+
 language: node_js
 
 node_js:
-  - 6
-  - 7
-  - 8
-  - 9
+  # - 8
+  - lts/*
 
 notifications:
   email:
     on_success: never
     on_failure: change
 
-cache:
-  directories:
 
 before_script:
-  - yarn
+  - yarn global add nyc codecov
+
 
 script:
   - yarn lint
   - yarn test
+
+
+after_script:
+  - nyc report --reporter=text-lcov > coverage.lcov && codecov
+
