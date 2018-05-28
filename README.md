@@ -9,7 +9,7 @@
 [![devDependency Status][devdependency-image]][devdependency-url]
 [![Code Style][style-image]][style-url]
 
-> A static site development workflow
+> A static site development workflow (Convention over Configuration)
 
 ## Installation
 
@@ -22,54 +22,72 @@ $ npm install x-pages
 
 ## Usage
 
-<!-- TODO: Introduction of API use -->
-
 ```javascript
-const xPages = require('x-pages')
-const result = xPages('zce')
-// result => 'zce@zce.me'
+const gulp = require('gulp')
+
+// load all tasks
+const { clean, serve, build, deploy, init } = require('x-pages')
+
+// register gulp tasks
+gulp.task('clean', clean)
+gulp.task('serve', serve)
+gulp.task('build', build)
+gulp.task('deploy', deploy)
+gulp.task('init', init)
+
+// or export (gulp 4 required)
+module.export = { clean, serve, build, deploy, init }
 ```
 
-## API
-
-<!-- TODO: Introduction of API -->
-
-### xPages(name[, options])
-
-#### name
-
-- Type: `string`
-- Details: name string
-
-#### options
-
-##### host
-
-- Type: `string`
-- Details: host string
-- Default: `'zce.me'`
-
 ## CLI Usage
-
-<!-- TODO: Introduction of CLI -->
 
 ```shell
 $ yarn global add x-pages
 
 # or npm
 $ npm install x-pages -g
+
+# make project directory & cd into
+$ mkdir my-project && cd $_
+
+# init project structure
+$ x-pages init
+
+# dev hot reload serve
+$ x-pages serve
+
+# development build
+$ x-pages build
+
+# production build (minify css, minify js, autoprefixer css, non sourcemaps)
+$ x-pages build --production
+
+# deploy to gh pages (make sure proj root is github repo, and it has gh-pages branch)
+$ x-pages deploy --production
 ```
 
 ```shell
 $ x-pages --help
 
-  Usage: x-pages <input>
+  Usage:
+
+    $ x-pages <command> [options]
+
+  Commands:
+
+    init                         initial a new x-pages project
+    build                        build this project
+    serve                        run development server
+    deploy                       deploy this project
+    clean                        clean dist files
 
   Options:
 
-    -V, --version  output the version number
-    -H, --host     Email host
-    -h, --help     output usage information
+    -h, --help                   output usage information
+    -V, --version                output the version number
+    -o, --open                   open browser automatically
+    -v, --verbose                enable the verbose reporter
+    -p, --production             production environment
 ```
 
 ## Contributing
@@ -85,7 +103,7 @@ $ x-pages --help
 
 ## License
 
-[MIT](LICENSE) &copy; zce <w@zce.me> (https://zce.me/)
+[MIT](LICENSE) &copy; [汪磊](https://zce.me/)
 
 
 

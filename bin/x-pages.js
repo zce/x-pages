@@ -33,6 +33,18 @@ const gulpArgv = [require.resolve('gulp/bin/gulp')]
 const argv = process.argv.slice(2)
 const command = argv[0]
 
+// help command
+if (argv.includes('-h') || argv.includes('--help')) {
+  console.log(help)
+  process.exit()
+}
+
+// version command
+if (argv.includes('-V') || argv.includes('--version')) {
+  console.log(pkg.version)
+  process.exit()
+}
+
 if (!command) {
   console.log(help)
   process.exit()
@@ -45,20 +57,6 @@ if (!['init', 'serve', 'build', 'deploy', 'clean'].includes(command)) {
   process.exit()
 } else {
   gulpArgv.push(command)
-}
-
-// #region options
-
-// help command
-if (argv.includes('-h') || argv.includes('--help')) {
-  console.log(help)
-  process.exit()
-}
-
-// version command
-if (argv.includes('-V') || argv.includes('--version')) {
-  console.log(pkg.version)
-  process.exit()
 }
 
 // open browser automatically
@@ -77,8 +75,6 @@ if (argv.includes('-p') || argv.includes('--production')) {
 if (!(argv.includes('-v') || argv.includes('--verbose'))) {
   gulpArgv.push('--silent')
 }
-
-// #endregion
 
 // gulp arguments
 gulpArgv.push('--cwd')
