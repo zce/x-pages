@@ -101,5 +101,9 @@ const gulp = spawn(process.argv[0], gulpArgv, {
 
 gulp.on('close', code => {
   spinner.stop()
-  console.log(chalk.cyan(`🌝  Task ${chalk.green(command)} complete.`))
+  if (code) {
+    console.log(chalk.red(`🌑  Task ${chalk.green(command)} failed.`))
+  } else {
+    console.log(chalk.cyan(`🌝  Task ${chalk.green(command)} completed.`))
+  }
 })
