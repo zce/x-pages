@@ -12,7 +12,11 @@
     "url": "https://github.com/zce/x-pages/issues"
   },
   "license": "MIT",
-  "author": "zce <w@zce.me> (https://zce.me/)",
+  "author": {
+    "name": "zce",
+    "email": "w@zce.me",
+    "url": "https://zce.me"
+  },
   "files": [
     "bin",
     "lib"
@@ -23,7 +27,6 @@
   },
   "directories": {
     "lib": "lib",
-    "doc": "doc",
     "example": "example",
     "test": "test"
   },
@@ -36,40 +39,33 @@
     "test": "nyc ava"
   },
   "dependencies": {
-    "@babel/core": "^7.1.2",
-    "@babel/preset-env": "^7.1.0",
-    "autoprefixer": "^9.3.1",
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "autoprefixer": "^9.5.1",
     "browser-sync": "^2.26.3",
     "bs-html-injector": "^3.0.3",
-    "chalk": "^2.4.1",
-    "css-mqpacker": "^7.0.0",
-    "cssnano": "^4.1.7",
-    "del": "^3.0.0",
+    "csscomb": "^4.3.0",
+    "cssnano": "^4.1.10",
+    "del": "^4.1.0",
     "gulp": "^4.0.0",
     "gulp-babel": "^8.0.0",
     "gulp-gh-pages": "^0.5.4",
     "gulp-htmlmin": "^5.0.1",
     "gulp-if": "^2.0.2",
-    "gulp-ignore": "^2.0.2",
-    "gulp-imagemin": "^4.1.0",
-    "gulp-less": "^4.0.1",
+    "gulp-imagemin": "^5.0.3",
     "gulp-load-plugins": "^1.5.0",
     "gulp-nunjucks": "^4.0.0",
-    "gulp-plumber": "^1.2.0",
+    "gulp-plumber": "^1.2.1",
     "gulp-postcss": "^8.0.0",
-    "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
-    "gulp-sourcemaps": "^2.6.4",
-    "gulp-uglify": "^3.0.1",
-    "merge-stream": "^1.0.1",
-    "ora": "^3.0.0",
-    "postcss-preset-env": "^6.3.0"
-  },
-  "devDependencies": {
-    "ava": "^0.25.0",
-    "nyc": "^13.1.0",
+    "gulp-size": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-useref": "^3.1.6",
+    "js-yaml": "^3.13.1",
+    "minimist": "^1.2.0",
     "standard": "^12.0.1"
   },
+  "devDependencies": {},
   "engines": {
     "node": ">=6"
   },

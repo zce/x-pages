@@ -115,7 +115,7 @@ $ x-pages --help
 [downloads-url]: https://npmjs.org/package/x-pages
 [version-image]: https://img.shields.io/npm/v/x-pages.svg
 [version-url]: https://npmjs.org/package/x-pages
-[license-image]: https://img.shields.io/npm/l/x-pages.svg
+[license-image]: https://img.shields.io/github/license/zce/x-pages.svg
 [license-url]: https://github.com/zce/x-pages/blob/master/LICENSE
 [dependency-image]: https://img.shields.io/david/zce/x-pages.svg
 [dependency-url]: https://david-dm.org/zce/x-pages
