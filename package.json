@@ -49,23 +49,27 @@
     "del": "^4.1.0",
     "gulp": "^4.0.0",
     "gulp-babel": "^8.0.0",
+    "gulp-beautify": "^3.0.0",
     "gulp-gh-pages": "^0.5.4",
     "gulp-htmlmin": "^5.0.1",
     "gulp-if": "^2.0.2",
     "gulp-imagemin": "^5.0.3",
     "gulp-load-plugins": "^1.5.0",
-    "gulp-nunjucks": "^4.0.0",
     "gulp-plumber": "^1.2.1",
     "gulp-postcss": "^8.0.0",
     "gulp-sass": "^4.0.2",
     "gulp-size": "^3.0.0",
+    "gulp-swig": "^0.9.1",
     "gulp-uglify": "^3.0.2",
     "gulp-useref": "^3.1.6",
     "js-yaml": "^3.13.1",
     "minimist": "^1.2.0",
     "standard": "^12.0.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "ava": "^1.2.1",
+    "standard": "^12.0.1"
+  },
   "engines": {
     "node": ">=6"
   },

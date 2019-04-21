@@ -1,5 +1,5 @@
 import test from 'ava'
-import { clean, serve, build, deploy, init } from '..'
+import { clean, serve, build, deploy } from '..'
 
 // TODO: Implement module test
 test('default', t => {
