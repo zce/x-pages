@@ -14,81 +14,71 @@
 ## Installation
 
 ```shell
-$ yarn add x-pages
+$ yarn add x-pages --dev
 
 # or npm
-$ npm install x-pages
+$ npm install x-pages --dev
 ```
 
-## Usage
+package.json
 
-```javascript
-const gulp = require('gulp')
-
-// load all tasks
-const { clean, serve, build, deploy, init } = require('x-pages')
-
-// register gulp tasks
-gulp.task('clean', clean)
-gulp.task('serve', serve)
-gulp.task('build', build)
-gulp.task('deploy', deploy)
-gulp.task('init', init)
-
-// or export (gulp 4 required)
-module.export = { clean, serve, build, deploy, init }
+```json
+{
+  "scripts": {
+    "clean": "x-pages clean",
+    "lint": "x-pages lint",
+    "serve": "x-pages serve",
+    "build": "x-pages build",
+    "start": "x-pages start",
+    "deploy": "x-pages deploy --production"
+  }
+}
 ```
+
 
 ## CLI Usage
 
 ```shell
-$ yarn global add x-pages
-
-# or npm
-$ npm install x-pages -g
-
-# make project directory & cd into
-$ mkdir my-project && cd $_
-
-# init project structure
-$ x-pages init
-
-# dev hot reload serve
-$ x-pages serve
-
-# development build
-$ x-pages build
-
-# production build (minify css, minify js, autoprefixer css, non sourcemaps)
-$ x-pages build --production
-
-# deploy to gh pages (make sure proj root is github repo, and it has gh-pages branch)
-$ x-pages deploy --production
+$ yarn <task> [options]
 ```
+
+### e.g.
 
 ```shell
-$ x-pages --help
-
-  Usage:
-
-    $ x-pages <command> [options]
-
-  Commands:
-
-    init                         initial a new x-pages project
-    build                        build this project
-    serve                        run development server
-    deploy                       deploy this project
-    clean                        clean dist files
-
-  Options:
-
-    -h, --help                   output usage information
-    -V, --version                output the version number
-    -o, --open                   open browser automatically
-    -v, --verbose                enable the verbose reporter
-    -p, --production             production environment
+$ yarn serve --port 5210 --open
+$ yarn build --production
 ```
+
+## Examples
+
+- [zce/x-pages-example](https://github.com/zce/x-pages-example/tree/x-pages) - x-pages examples
+
+## Folder Structure
+
+```
+└── my-project ······································· proj root
+   ├─ public ········································· static dir (unprocessed)
+   ├─ src ············································ source dir
+   │  ├─ assets ······································ assets dir
+   │  │  ├─ fonts ···································· fonts dir (imagemin)
+   │  │  ├─ images ··································· images dir (imagemin)
+   │  │  ├─ scripts ·································· scripts dir (babel / uglify)
+   │  │  └─ styles ··································· styles dir (scss / postcss)
+   │  ├─ layouts ····································· layouts dir (dont output)
+   │  ├─ partials ···································· partials dir (dont output)
+   │  └─ index.html ·································· page file (use layout & partials)
+   ├─ .editorconfig ·································· editor config file
+   ├─ .gitignore ····································· git ignore file
+   ├─ .travis.yml ···································· travis ci config file
+   ├─ README.md ······································ repo readme
+   ├─ gulpfile.js ···································· gulp tasks file
+   └─ package.json ··································· package file
+```
+
+## Related
+
+- [zce/pages-boilerplate](https://github.com/zce/pages-boilerplate) - Always a pleasure scaffolding your awesome static sites.
+- [zce/pages-tasks](https://github.com/zce/pages-tasks) - A preset static pages project gulp tasks
 
 ## Contributing
 
@@ -103,7 +93,7 @@ $ x-pages --help
 
 ## License
 
-[MIT](LICENSE) &copy; [汪磊](https://zce.me/)
+[MIT](LICENSE) &copy; [汪磊](https://zce.me)
 
 
 

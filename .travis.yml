@@ -1,14 +1,8 @@
 sudo: false
 
-# os:
-#   - linux
-#   - osx
-#   - windows
-
 language: node_js
 
 node_js:
-  # - 8
   - lts/*
 
 notifications:
@@ -17,15 +11,7 @@ notifications:
     on_failure: change
 
 
-before_script:
-  - yarn global add nyc codecov
-
 
 script:
   - yarn lint
-  - yarn test
-
-
-after_script:
-  - nyc report --reporter=text-lcov > coverage.lcov && codecov
 
