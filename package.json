@@ -1,6 +1,6 @@
 {
   "name": "x-pages",
-  "version": "0.2.0-rc.1",
+  "version": "0.2.0",
   "description": "A static site development workflow",
   "keywords": [
     "x-pages",
@@ -27,7 +27,6 @@
     "lint": "standard --fix"
   },
   "dependencies": {
-    "gulp-cli": "latest",
     "pages-tasks": "latest"
   },
   "devDependencies": {

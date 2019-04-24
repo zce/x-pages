@@ -3836,7 +3836,7 @@ gulp-beautify@^3.0.0:
     js-beautify "^1.8.8"
     through2 "^2.0.0"
 
-gulp-cli@^2.2.0, gulp-cli@latest:
+gulp-cli@^2.2.0:
   version "2.2.0"
   resolved "https://registry.npm.taobao.org/gulp-cli/download/gulp-cli-2.2.0.tgz#5533126eeb7fe415a7e3e84a297d334d5cf70ebc"
   integrity sha1-VTMSbut/5BWn4+hKKX0zTVz3Drw=
