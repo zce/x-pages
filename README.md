@@ -100,7 +100,7 @@ Clean the `dist` & `temp` files.
 
 ## Examples
 
-- [zce/x-pages-example](https://github.com/zce/x-pages-example/tree/x-pages) - x-pages examples
+- [zce/x-pages-example](https://github.com/zce/x-pages-example) - x-pages examples
 
 ## Folder Structure
 
