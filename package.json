@@ -1,6 +1,6 @@
 {
   "name": "x-pages",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A static site development workflow",
   "keywords": [
     "x-pages",
@@ -27,10 +27,10 @@
     "lint": "standard --fix"
   },
   "dependencies": {
-    "pages-tasks": "latest"
+    "pages-tasks": "^0.2.0"
   },
   "devDependencies": {
-    "standard": "latest"
+    "standard": "^12.0.1"
   },
   "engines": {
     "node": ">=6"

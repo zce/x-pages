@@ -10,8 +10,5 @@ notifications:
     on_success: never
     on_failure: change
 
-
-
 script:
   - yarn lint
-
