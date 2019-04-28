@@ -1,6 +1,6 @@
 {
   "name": "x-pages",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "A static site development workflow",
   "keywords": [
     "cli",
@@ -37,6 +37,8 @@
   },
   "preferGlobal": true,
   "renovate": {
-    "extends": [ "zce" ]
+    "extends": [
+      "zce"
+    ]
   }
 }
