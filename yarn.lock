@@ -6193,10 +6193,10 @@ p-try@^1.0.0:
   resolved "https://registry.yarnpkg.com/p-try/-/p-try-1.0.0.tgz#cbc79cdbaf8fd4228e13f621f2b1a237c1b207b3"
   integrity sha1-y8ec26+P1CKOE/Yh8rGiN8GyB7M=
 
-pages-tasks@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/pages-tasks/-/pages-tasks-0.2.0.tgz#4d04dd614cb1fd3b194e392b226a92246352480e"
-  integrity sha512-V6rfojNIx9cHgOPkak+QVMZHXtGjpKQ7S8cZn9XUCvlViqUoKYrTLD87TVv5k+GYS+AUnr5FH/ajaoVcBA+lSA==
+pages-tasks@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/pages-tasks/-/pages-tasks-0.3.0.tgz#143a7911d8b3a707f33e7fc55c18d901ccfc8df5"
+  integrity sha512-HDdemlh/asMIe6TRXhl24GMaus8XEXxAML7CRbYpWJvAD6QWHHkNR1s8RzdkmfG+fQuU8/8GYe5EeptpW/Eypg==
   dependencies:
     "@babel/core" "^7.4.4"
     "@babel/preset-env" "^7.4.4"
