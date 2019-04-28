@@ -3,13 +3,17 @@
   "version": "0.3.0",
   "description": "A static site development workflow",
   "keywords": [
-    "x-pages",
     "cli",
+    "x-pages",
     "zce"
   ],
   "homepage": "https://github.com/zce/x-pages#readme",
   "bugs": {
     "url": "https://github.com/zce/x-pages/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zce/x-pages.git"
   },
   "license": "MIT",
   "author": {
@@ -19,10 +23,6 @@
   },
   "main": "index.js",
   "bin": "cli.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/zce/x-pages.git"
-  },
   "scripts": {
     "lint": "standard --fix"
   },
@@ -35,5 +35,8 @@
   "engines": {
     "node": ">=6"
   },
-  "preferGlobal": true
+  "preferGlobal": true,
+  "renovate": {
+    "extends": [ "zce" ]
+  }
 }
