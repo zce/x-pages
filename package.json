@@ -35,10 +35,5 @@
   "engines": {
     "node": ">=6"
   },
-  "preferGlobal": true,
-  "renovate": {
-    "extends": [
-      "zce"
-    ]
-  }
+  "preferGlobal": true
 }
