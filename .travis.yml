@@ -11,4 +11,5 @@ notifications:
     on_failure: change
 
 script:
+  - yarn format
   - yarn lint
