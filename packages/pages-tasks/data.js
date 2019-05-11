@@ -35,4 +35,7 @@ const loadData = dir => {
   return data
 }
 
+/**
+ * Load pages data
+ */
 module.exports = loadData

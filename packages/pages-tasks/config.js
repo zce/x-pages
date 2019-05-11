@@ -28,4 +28,7 @@ config.paths = Object.assign(
   config.paths
 )
 
+/**
+ * Project config
+ */
 module.exports = config
