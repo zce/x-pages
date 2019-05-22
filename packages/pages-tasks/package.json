@@ -22,8 +22,8 @@
   },
   "main": "index.js",
   "dependencies": {
-    "@babel/core": "^7.4.4",
-    "@babel/preset-env": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
     "autoprefixer": "^9.5.1",
     "browser-sync": "^2.26.5",
     "bs-html-injector": "^3.0.3",
