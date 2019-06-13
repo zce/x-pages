@@ -24,8 +24,8 @@
   "dependencies": {
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
-    "autoprefixer": "^9.5.1",
-    "browser-sync": "^2.26.5",
+    "autoprefixer": "^9.6.0",
+    "browser-sync": "^2.26.7",
     "bs-html-injector": "^3.0.3",
     "csscomb": "^4.3.0",
     "cssnano": "^4.1.10",
@@ -45,7 +45,6 @@
     "gulp-swig": "^0.9.1",
     "gulp-uglify": "^3.0.2",
     "gulp-useref": "^3.1.6",
-    "js-yaml": "^3.13.1",
     "minimist": "^1.2.0",
     "standard": "^12.0.1"
   },
