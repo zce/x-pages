@@ -2004,11 +2004,6 @@ array-uniq@^2.1.0:
   resolved "https://registry.npm.taobao.org/array-uniq/download/array-uniq-2.1.0.tgz#46603d5e28e79bfd02b046fcc1d77c6820bd8e98"
   integrity sha1-RmA9Xijnm/0CsEb8wdd8aCC9jpg=
 
-array-unique@^0.2.1:
-  version "0.2.1"
-  resolved "https://registry.npm.taobao.org/array-unique/download/array-unique-0.2.1.tgz#a1d97ccafcbc2625cc70fadceb36a50c58b01a53"
-  integrity sha1-odl8yvy8JiXMcPrc6zalDFiwGlM=
-
 array-unique@^0.3.2:
   version "0.3.2"
   resolved "https://registry.npm.taobao.org/array-unique/download/array-unique-0.3.2.tgz#a894b75d4bc4f6cd679ef3244a9fd8f46ae2d428"
@@ -5661,17 +5656,17 @@ gulp-imagemin@^6.0.0:
     imagemin-optipng "^6.0.0"
     imagemin-svgo "^7.0.0"
 
-gulp-load-plugins@^1.6.0:
-  version "1.6.0"
-  resolved "https://registry.npm.taobao.org/gulp-load-plugins/download/gulp-load-plugins-1.6.0.tgz#2d060c42faf481141ef638431572923d8701bd0d"
-  integrity sha1-LQYMQvr0gRQe9jhDFXKSPYcBvQ0=
+gulp-load-plugins@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/gulp-load-plugins/-/gulp-load-plugins-2.0.0.tgz#98c471292c6777f7fbb554ba1588dc64c88ddd61"
+  integrity sha512-/tYScCootRAlSv2mIiwazDodp8p2DILyoNP+6QjCvYpLtfEuuNqVGv/lfhZhWD6cWtfqiFdVYfSjzL4MLIcM1w==
   dependencies:
-    array-unique "^0.2.1"
+    array-unique "^0.3.2"
     fancy-log "^1.2.0"
     findup-sync "^3.0.0"
     gulplog "^1.0.0"
     has-gulplog "^0.1.0"
-    micromatch "^3.1.10"
+    micromatch "^4.0.2"
     resolve "^1.1.7"
 
 gulp-match@^1.0.3:
