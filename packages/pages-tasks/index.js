@@ -1,3 +1,4 @@
+const path = require('path')
 const gulp = require('gulp')
 const gulpLoadPlugins = require('gulp-load-plugins')
 const minimist = require('minimist')
@@ -25,7 +26,8 @@ const clean = () => {
 const lint = done => {
   const comb = new Comb(require('./.csscomb.json'))
   comb.processPath(config.src)
-  standard.lintFiles(config.paths.scripts, { cwd: config.src, fix: true }, done)
+  const cwd = path.join(__dirname, config.src)
+  standard.lintFiles(config.paths.scripts, { cwd, fix: true }, done)
 }
 
 const style = () => {
