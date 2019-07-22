@@ -1,6 +1,6 @@
 {
   "name": "pages-tasks",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "description": "A preset gulp tasks for static page sites",
   "keywords": [
     "pages-tasks",
