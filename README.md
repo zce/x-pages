@@ -1,12 +1,6 @@
 # x-pages
 
-[![Build Status][travis-image]][travis-url]
-[![NPM Downloads][downloads-image]][downloads-url]
-[![NPM Version][version-image]][version-url]
-[![License][license-image]][license-url]
-[![Dependency Status][dependency-image]][dependency-url]
-[![devDependency Status][devdependency-image]][devdependency-url]
-[![Code Style][style-image]][style-url]
+[![Build Status][travis-image]][travis-url] [![NPM Downloads][downloads-image]][downloads-url] [![NPM Version][version-image]][version-url] [![License][license-image]][license-url] [![Dependency Status][dependency-image]][dependency-url] [![devDependency Status][devdependency-image]][devdependency-url] [![Code Style][style-image]][style-url]
 
 > A static site development workflow (Convention over Configuration)
 
@@ -139,7 +133,6 @@ Clean the `dist` & `temp` files.
 
 ## Related
 
-- [zce/pages-tasks](https://github.com/zce/pages-tasks) - A preset gulp tasks for static page sites.
 - [zce/pages-boilerplate](https://github.com/zce/pages-boilerplate) - Always a pleasure scaffolding your awesome static sites.
 
 ## Contributing
@@ -156,8 +149,6 @@ Clean the `dist` & `temp` files.
 ## License
 
 [MIT](LICENSE) &copy; [汪磊](https://zce.me)
-
-
 
 [travis-image]: https://img.shields.io/travis/zce/x-pages/master.svg
 [travis-url]: https://travis-ci.org/zce/x-pages

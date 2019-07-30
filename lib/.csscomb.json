@@ -11,7 +11,9 @@
   "quotes": "single",
   "remove-empty-rulesets": false,
   "sort-order": [
-    ["$variable"],
+    [
+      "$variable"
+    ],
     [
       "position",
       "top",
@@ -215,8 +217,14 @@
       "user-zoom",
       "orientation"
     ],
-    ["..."],
-    ["$include", "$extend", "$import"]
+    [
+      "..."
+    ],
+    [
+      "$include",
+      "$extend",
+      "$import"
+    ]
   ],
   "sort-order-fallback": "abc",
   "space-after-colon": 1,
