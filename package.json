@@ -1,6 +1,6 @@
 {
   "name": "x-pages",
-  "version": "0.8.1",
+  "version": "1.0.0-alpha.0",
   "description": "A static site development workflow",
   "keywords": [
     "pages-tasks",
@@ -24,7 +24,9 @@
     "format": "prettier --write \"**/*.js\"",
     "lint": "standard",
     "commit": "git-cz",
-    "release": "standard-version"
+    "release": "standard-version",
+    "preship": "yarn format & yarn lint",
+    "ship": "yarn publish --registry=https://registry.yarnpkg.com"
   },
   "husky": {
     "hooks": {
