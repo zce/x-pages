@@ -90,7 +90,7 @@
     "gulp-uglify": "^3.0.2",
     "gulp-useref": "^3.1.6",
     "minimist": "^1.2.0",
-    "standard": "^13.1.0"
+    "standard": "^14.0.0"
   },
   "devDependencies": {
     "@commitlint/cli": "8.1.0",
