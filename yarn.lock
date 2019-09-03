@@ -5018,10 +5018,10 @@ http-signature@~1.2.0:
     jsprim "^1.2.2"
     sshpk "^1.7.0"
 
-husky@3.0.4:
-  version "3.0.4"
-  resolved "https://registry.npm.taobao.org/husky/download/husky-3.0.4.tgz#10a48ac11ab50859b0939750fa0b4e07ad0bf669"
-  integrity sha1-EKSKwRq1CFmwk5dQ+gtOB60L9mk=
+husky@3.0.5:
+  version "3.0.5"
+  resolved "https://registry.npm.taobao.org/husky/download/husky-3.0.5.tgz#d7db27c346645a8dc52df02aa534a377ad7925e0"
+  integrity sha1-19snw0ZkWo3FLfAqpTSjd615JeA=
   dependencies:
     chalk "^2.4.2"
     cosmiconfig "^5.2.1"
