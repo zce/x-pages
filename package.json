@@ -88,7 +88,7 @@
     "gulp-size": "^3.0.0",
     "gulp-swig": "^0.9.1",
     "gulp-uglify": "^3.0.2",
-    "gulp-useref": "^3.1.6",
+    "gulp-useref": "^4.0.0",
     "minimist": "^1.2.0",
     "standard": "^14.0.0"
   },

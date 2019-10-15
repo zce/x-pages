@@ -3166,6 +3166,16 @@ duplexify@^3.5.0, duplexify@^3.6.0:
     readable-stream "^2.0.0"
     stream-shift "^1.0.0"
 
+duplexify@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.npm.taobao.org/duplexify/download/duplexify-4.1.1.tgz#7027dc374f157b122a8ae08c2d3ea4d2d953aa61"
+  integrity sha1-cCfcN08VexIqiuCMLT6k0tlTqmE=
+  dependencies:
+    end-of-stream "^1.4.1"
+    inherits "^2.0.3"
+    readable-stream "^3.1.1"
+    stream-shift "^1.0.0"
+
 each-props@^1.3.0:
   version "1.3.2"
   resolved "https://registry.npm.taobao.org/each-props/download/each-props-1.3.2.tgz#ea45a414d16dd5cfa419b1a81720d5ca06892333"
@@ -3235,6 +3245,13 @@ end-of-stream@^1.0.0, end-of-stream@^1.1.0:
   version "1.4.1"
   resolved "https://registry.npm.taobao.org/end-of-stream/download/end-of-stream-1.4.1.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fend-of-stream%2Fdownload%2Fend-of-stream-1.4.1.tgz#ed29634d19baba463b6ce6b80a37213eab71ec43"
   integrity sha1-7SljTRm6ukY7bOa4CjchPqtx7EM=
+  dependencies:
+    once "^1.4.0"
+
+end-of-stream@^1.4.1:
+  version "1.4.4"
+  resolved "https://registry.npm.taobao.org/end-of-stream/download/end-of-stream-1.4.4.tgz?cache=0&sync_timestamp=1569416267505&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fend-of-stream%2Fdownload%2Fend-of-stream-1.4.4.tgz#5ae64a5f45057baf3626ec14da0ca5e4b2431eb0"
+  integrity sha1-WuZKX0UFe682JuwU2gyl5LJDHrA=
   dependencies:
     once "^1.4.0"
 
@@ -4410,7 +4427,7 @@ glob-watcher@^5.0.3:
     just-debounce "^1.0.0"
     object.defaults "^1.1.0"
 
-glob@7.1.4, glob@^7.0.0, glob@^7.0.3, glob@^7.0.5, glob@^7.1.1, glob@^7.1.2, glob@^7.1.3, glob@~7.1.1:
+glob@7.1.4, glob@^7.0.0, glob@^7.0.3, glob@^7.0.5, glob@^7.1.1, glob@^7.1.2, glob@^7.1.3, glob@^7.1.4, glob@~7.1.1:
   version "7.1.4"
   resolved "https://registry.npm.taobao.org/glob/download/glob-7.1.4.tgz#aa608a2f6c577ad357e1ae5a5c26d9a8d1969255"
   integrity sha1-qmCKL2xXetNX4a5aXCbZqNGWklU=
@@ -4639,6 +4656,15 @@ gulp-if@^2.0.2:
     ternary-stream "^2.0.1"
     through2 "^2.0.1"
 
+gulp-if@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.npm.taobao.org/gulp-if/download/gulp-if-3.0.0.tgz#6c3e7edc8bafadc34f2ebecb314bf43324ba1e40"
+  integrity sha1-bD5+3IuvrcNPLr7LMUv0MyS6HkA=
+  dependencies:
+    gulp-match "^1.1.0"
+    ternary-stream "^3.0.0"
+    through2 "^3.0.1"
+
 gulp-imagemin@^6.0.0:
   version "6.0.0"
   resolved "https://registry.npm.taobao.org/gulp-imagemin/download/gulp-imagemin-6.0.0.tgz#5d95d72413fddf975ced9f347dfe61128f4fb7ba"
@@ -4670,7 +4696,7 @@ gulp-load-plugins@^2.0.0:
     micromatch "^4.0.2"
     resolve "^1.1.7"
 
-gulp-match@^1.0.3:
+gulp-match@^1.0.3, gulp-match@^1.1.0:
   version "1.1.0"
   resolved "https://registry.npm.taobao.org/gulp-match/download/gulp-match-1.1.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fgulp-match%2Fdownload%2Fgulp-match-1.1.0.tgz#552b7080fc006ee752c90563f9fec9d61aafdf4f"
   integrity sha1-VStwgPwAbudSyQVj+f7J1hqv308=
@@ -4753,20 +4779,19 @@ gulp-uglify@^3.0.2:
     uglify-js "^3.0.5"
     vinyl-sourcemaps-apply "^0.2.0"
 
-gulp-useref@^3.1.6:
-  version "3.1.6"
-  resolved "https://registry.npm.taobao.org/gulp-useref/download/gulp-useref-3.1.6.tgz#67721f0ba6747bcfdf40e8bbebaf3cf9330e29da"
-  integrity sha1-Z3IfC6Z0e8/fQOi76688+TMOKdo=
+gulp-useref@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.npm.taobao.org/gulp-useref/download/gulp-useref-4.0.0.tgz#9ca0a3a47892864d374bf81a46868e5bff035dae"
+  integrity sha1-nKCjpHiShk03S/gaRoaOW/8DXa4=
   dependencies:
     event-stream "^4.0.1"
     extend "^3.0.2"
-    glob "^7.1.3"
+    glob "^7.1.4"
     gulp-concat "^2.6.1"
-    gulp-if "^2.0.2"
-    is-relative-url "1.0.0"
+    gulp-if "^3.0.0"
     plugin-error "^1.0.1"
-    through2 "^2.0.3"
-    useref "^1.4.1"
+    through2 "^3.0.1"
+    useref "^1.4.2"
     vinyl-fs "^3.0.3"
 
 gulp-util@~3.0.8:
@@ -5287,11 +5312,6 @@ irregular-plurals@^2.0.0:
   resolved "https://registry.npm.taobao.org/irregular-plurals/download/irregular-plurals-2.0.0.tgz#39d40f05b00f656d0b7fa471230dd3b714af2872"
   integrity sha1-OdQPBbAPZW0Lf6RxIw3TtxSvKHI=
 
-is-absolute-url@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npm.taobao.org/is-absolute-url/download/is-absolute-url-1.0.0.tgz#2d7ef0fd0bb2a88dac7e92253c6808a0ace24bfb"
-  integrity sha1-LX7w/QuyqI2sfpIlPGgIoKziS/s=
-
 is-absolute-url@^2.0.0:
   version "2.1.0"
   resolved "https://registry.npm.taobao.org/is-absolute-url/download/is-absolute-url-2.1.0.tgz#50530dfb84fcc9aa7dbe7852e83a37b93b9f2aa6"
@@ -5570,13 +5590,6 @@ is-regexp@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npm.taobao.org/is-regexp/download/is-regexp-1.0.0.tgz#fd2d883545c46bac5a633e7b9a09e87fa2cb5069"
   integrity sha1-/S2INUXEa6xaYz57mgnof6LLUGk=
-
-is-relative-url@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npm.taobao.org/is-relative-url/download/is-relative-url-1.0.0.tgz#87a9d35e8a789b49e079b4d7d69d64612e8e0e1f"
-  integrity sha1-h6nTXop4m0ngebTX1p1kYS6ODh8=
-  dependencies:
-    is-absolute-url "^1.0.0"
 
 is-relative@^1.0.0:
   version "1.0.0"
@@ -9407,6 +9420,16 @@ ternary-stream@^2.0.1:
     merge-stream "^1.0.0"
     through2 "^2.0.1"
 
+ternary-stream@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.npm.taobao.org/ternary-stream/download/ternary-stream-3.0.0.tgz#7951930ea9e823924d956f03d516151a2d516253"
+  integrity sha1-eVGTDqnoI5JNlW8D1RYVGi1RYlM=
+  dependencies:
+    duplexify "^4.1.1"
+    fork-stream "^0.0.4"
+    merge-stream "^2.0.0"
+    through2 "^3.0.1"
+
 text-extensions@^1.0.0:
   version "1.9.0"
   resolved "https://registry.npm.taobao.org/text-extensions/download/text-extensions-1.9.0.tgz#1853e45fee39c945ce6f6c36b2d659b5aabc2a26"
@@ -9453,7 +9476,7 @@ through2@^2.0.0, through2@^2.0.1, through2@^2.0.2, through2@^2.0.3, through2@~2.
     readable-stream "~2.3.6"
     xtend "~4.0.1"
 
-through2@^3.0.0:
+through2@^3.0.0, through2@^3.0.1:
   version "3.0.1"
   resolved "https://registry.npm.taobao.org/through2/download/through2-3.0.1.tgz#39276e713c3302edf9e388dd9c812dd3b825bd5a"
   integrity sha1-OSducTwzAu3544jdnIEt07glvVo=
@@ -9852,10 +9875,10 @@ use@^3.1.0:
   resolved "https://registry.npm.taobao.org/use/download/use-3.1.1.tgz#d50c8cac79a19fbc20f2911f56eb973f4e10070f"
   integrity sha1-1QyMrHmhn7wg8pEfVuuXP04QBw8=
 
-useref@^1.4.1:
-  version "1.4.1"
-  resolved "https://registry.npm.taobao.org/useref/download/useref-1.4.1.tgz#02dabad10b1a85025d964252fca31b805931ad7d"
-  integrity sha1-Atq60QsahQJdlkJS/KMbgFkxrX0=
+useref@^1.4.2:
+  version "1.4.2"
+  resolved "https://registry.npm.taobao.org/useref/download/useref-1.4.2.tgz#542396fe7fa11a1b9fe982feb7ae3428f0e535b4"
+  integrity sha1-VCOW/n+hGhuf6YL+t640KPDlNbQ=
 
 util-deprecate@^1.0.1, util-deprecate@~1.0.1:
   version "1.0.2"
