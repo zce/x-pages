@@ -66,9 +66,9 @@
     "singleQuote": true
   },
   "dependencies": {
-    "@babel/core": "^7.7.7",
-    "@babel/preset-env": "^7.7.7",
-    "autoprefixer": "^9.7.3",
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "autoprefixer": "^9.7.4",
     "browser-sync": "^2.26.7",
     "bs-html-injector": "^3.0.3",
     "csscomb": "^4.3.0",
@@ -80,27 +80,27 @@
     "gulp-gh-pages": "^0.5.4",
     "gulp-htmlmin": "^5.0.1",
     "gulp-if": "^3.0.0",
-    "gulp-imagemin": "^6.2.0",
-    "gulp-load-plugins": "^2.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-load-plugins": "^2.0.2",
     "gulp-plumber": "^1.2.1",
     "gulp-postcss": "^8.0.0",
     "gulp-sass": "^4.0.2",
     "gulp-size": "^3.0.0",
     "gulp-swig": "^0.9.1",
     "gulp-uglify": "^3.0.2",
-    "gulp-useref": "^4.0.0",
+    "gulp-useref": "^4.0.1",
     "minimist": "^1.2.0",
     "standard": "^14.3.1"
   },
   "devDependencies": {
-    "@commitlint/cli": "8.2.0",
-    "@commitlint/config-conventional": "8.2.0",
+    "@commitlint/cli": "8.3.5",
+    "@commitlint/config-conventional": "8.3.4",
     "commitizen": "4.0.3",
-    "cz-conventional-changelog": "3.0.2",
-    "husky": "3.1.0",
-    "lint-staged": "9.5.0",
+    "cz-conventional-changelog": "3.1.0",
+    "husky": "4.2.1",
+    "lint-staged": "10.0.7",
     "prettier": "1.19.1",
-    "standard-version": "7.0.1"
+    "standard-version": "7.1.0"
   },
   "engines": {
     "node": ">=8"
