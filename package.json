@@ -23,10 +23,7 @@
   "scripts": {
     "format": "prettier --write \"**/*.js\"",
     "lint": "standard",
-    "commit": "git-cz",
-    "release": "standard-version",
-    "preship": "yarn format & yarn lint",
-    "ship": "yarn publish --registry=https://registry.yarnpkg.com"
+    "prepare": "npm run format & npm run lint"
   },
   "husky": {
     "hooks": {
@@ -42,22 +39,14 @@
   "lint-staged": {
     "*.js": [
       "prettier --write",
-      "standard --fix",
-      "git add"
+      "standard --fix"
     ],
     "*.json": [
-      "prettier --write",
-      "git add"
+      "prettier --write"
     ],
     "*.md": [
-      "prettier --write",
-      "git add"
+      "prettier --write"
     ]
-  },
-  "config": {
-    "commitizen": {
-      "path": "cz-conventional-changelog"
-    }
   },
   "prettier": {
     "arrowParens": "avoid",
@@ -67,11 +56,16 @@
     "singleQuote": true,
     "trailingComma": "none"
   },
+  "renovate": {
+    "extends": [
+      "zce"
+    ]
+  },
   "dependencies": {
-    "@babel/core": "^7.10.4",
-    "@babel/preset-env": "^7.10.4",
-    "autoprefixer": "^9.8.4",
-    "browser-sync": "^2.26.7",
+    "@babel/core": "^7.11.0",
+    "@babel/preset-env": "^7.11.0",
+    "autoprefixer": "^9.8.6",
+    "browser-sync": "^2.26.12",
     "bs-html-injector": "^3.0.3",
     "csscomb": "^4.3.0",
     "cssnano": "^4.1.10",
@@ -95,16 +89,16 @@
     "standard": "^14.3.4"
   },
   "devDependencies": {
-    "@commitlint/cli": "9.0.1",
-    "@commitlint/config-conventional": "9.0.1",
-    "commitizen": "4.1.2",
-    "cz-conventional-changelog": "3.2.0",
+    "@commitlint/cli": "9.1.1",
+    "@commitlint/config-conventional": "9.1.1",
     "husky": "4.2.5",
     "lint-staged": "10.2.11",
-    "prettier": "2.0.5",
-    "standard-version": "8.0.0"
+    "prettier": "2.0.5"
   },
   "engines": {
     "node": ">=8"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
   }
 }
