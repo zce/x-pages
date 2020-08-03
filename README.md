@@ -13,7 +13,7 @@ $ yarn add x-pages --dev
 $ npm install x-pages --dev
 ```
 
-package.json
+in your package.json `scripts`:
 
 ```json
 {
@@ -26,6 +26,12 @@ package.json
     "deploy": "x-pages deploy --production"
   }
 }
+```
+
+You can also use the x-pages template provided by the [CAZ](https://github.com/zce/caz) scaffold tool to quickly generate a project that uses x-pages.
+
+```shell
+$ npx caz x-pages my-project
 ```
 
 ## CLI Usage
