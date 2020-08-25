@@ -92,7 +92,7 @@
     "@commitlint/cli": "9.1.2",
     "@commitlint/config-conventional": "9.1.2",
     "husky": "4.2.5",
-    "lint-staged": "10.2.11",
+    "lint-staged": "10.2.13",
     "prettier": "2.0.5"
   },
   "engines": {
