@@ -10,7 +10,7 @@
 $ yarn add x-pages --dev
 
 # or npm
-$ npm install x-pages --dev
+$ npm install x-pages --save-dev
 ```
 
 in your package.json `scripts`:
