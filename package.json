@@ -81,7 +81,7 @@
     "gulp-plumber": "^1.2.1",
     "gulp-postcss": "^8.0.0",
     "gulp-sass": "^4.1.0",
-    "gulp-size": "^3.0.0",
+    "gulp-size": "^4.0.0",
     "gulp-swig": "^0.9.1",
     "gulp-uglify": "^3.0.2",
     "gulp-useref": "^5.0.0",
